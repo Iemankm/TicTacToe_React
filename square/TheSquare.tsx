@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import styles from "../square/TheSquare.module.css";
+import classnames from "classnames";
 
 type Player = "X" | "O" | "BOTH" | null;
-
 function TheSquare({
   value,
   onClick,
@@ -14,7 +15,7 @@ function TheSquare({
   if (!value) {
     return (
       <motion.button
-        className="square"
+        className={styles.square}
         onClick={onClick}
         disabled={Boolean(winner)}
         animate={{
@@ -23,13 +24,17 @@ function TheSquare({
           borderRadius: ["20%", "20%", "50%", "50%", "20%"],
         }}
         transition={{ stiffness: 500 }}
-      > 
+      >
         {" "}
       </motion.button>
     );
   }
   return (
-    <button className={`square square_${value}`} disabled>
+    <button
+      className={classnames(styles.square, styles[`square_${value}`])}
+      disabled
+    >
+      {" "}
       {value}
     </button>
   );
