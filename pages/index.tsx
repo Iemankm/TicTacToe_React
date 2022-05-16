@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import Board from "../components/Game";
+import Board from "../game/Game";
 import {useState ,useEffect } from "react";
 
 export default function Home() {

@@ -1,9 +1,9 @@
 import React, { useReducer } from "react";
-import TheSquare from "./TheSquare";
+import TheSquare from "../square/TheSquare";
 import { motion } from "framer-motion";
-import { TicTacToeMachine } from "./GameState";
+import { TicTacToeMachine } from "../state/GameState";
 import { useMachine } from "@xstate/react";
-import styles from "../styles/Game.module.css";
+import styles from "../game/Game.module.css";
 
 function Board() {
   const [state, send] = useMachine(TicTacToeMachine);
