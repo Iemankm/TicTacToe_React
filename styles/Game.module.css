@@ -1,0 +1,35 @@
+.game {
+  padding-top: -100px;
+}
+
+.title {
+  color: #31572c;
+  font-size: 50px;
+  padding-left: 13%;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 2fr);
+}
+
+.newgame {
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: #124559;
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  margin-left: 95px;
+  color: #cbe4b7;
+}
+
+.textt {
+  font-size: 30px;
+  padding-left: 20%;
+  padding-right: 10%;
+
+  color: #124559;
+}
